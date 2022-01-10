@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Fast.ai - Initial Thoughts | aadam.dev</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Fast.ai - Initial Thoughts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What makes the fast.ai course on deep learning different from many others! Initial Impression of the course and the approach followed by Jeremy Howard." />
+<meta property="og:description" content="What makes the fast.ai course on deep learning different from many others! Initial Impression of the course and the approach followed by Jeremy Howard." />
+<link rel="canonical" href="https://aadam.dev/reviews/course/2017/06/15/fast-ai-initial-thoughts.html" />
+<meta property="og:url" content="https://aadam.dev/reviews/course/2017/06/15/fast-ai-initial-thoughts.html" />
+<meta property="og:site_name" content="aadam.dev" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-06-15T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Fast.ai - Initial Thoughts" />
+<script type="application/ld+json">
+{"url":"https://aadam.dev/reviews/course/2017/06/15/fast-ai-initial-thoughts.html","@type":"BlogPosting","headline":"Fast.ai - Initial Thoughts","dateModified":"2017-06-15T00:00:00-05:00","datePublished":"2017-06-15T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://aadam.dev/reviews/course/2017/06/15/fast-ai-initial-thoughts.html"},"description":"What makes the fast.ai course on deep learning different from many others! Initial Impression of the course and the approach followed by Jeremy Howard.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://aadam.dev/feed.xml" title="aadam.dev" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" /><script src="https://hypothes.is/embed.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.1/katex.min.css" integrity="sha512-vJqxkZ+Sugf/6WRlpcxN01qVfX/29hF6qc33eHF1va3NgoV+U+wCi+uTAsQ10sDoGyBxHLdaHvGwDlV3yVYboA==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.1/katex.min.js" integrity="sha512-5ufNcHqOYgilGEHPfuRIQ5B/vDS1M8+UC+DESZ5CwVgGTg+b2Ol/15rYL/GiCWJ/Sx8oVo0FPFok1dPk8U9INQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.1/contrib/auto-render.min.js" integrity="sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js" integrity="sha512-M36RUChWzAh1veeenRZFql7HydLEnkYmoloiCvVrhz402UZgKI93qkV7SsaxtVKdN95Wzajh39ysrXCq34NTsg==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">aadam.dev</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Fast.ai - Initial Thoughts</h1><p class="page-description">What makes the fast.ai course on deep learning different from many others! Initial Impression of the course and the approach followed by Jeremy Howard.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2017-06-15T00:00:00-05:00" itemprop="datePublished">
+        Jun 15, 2017
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#Reviews">Reviews</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#Course">Course</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>For a long time now, I’ve been planning to start learning about the deep learning, but whenever I start reading about it, either through books such as <a href="https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618">The MIT Press Deep Learning</a> book, or through some online video or MOOCs, I get bombarded with strange mathematical formulas and complex equations. Of course this complex mathematics is quite necessary to understand Deep Learning models but it also repels a beginner from learning about this field, as a beginner is more result oriented.</p>
+
+<p>If I was a PhD student and I was researching to make a specific algorithm perform better in some way, sure I’d have to learn about all those equations and formulas, but the reality is, I’m not, for now. I am just a curious student, who’d like to get a general overview about how Deep Learning works and build some apps to test different models on the real world data.</p>
+
+<p>But for a long time, most of the resources available to learn about Deep Learning were focusing on those PhD level students, quite boring and technical, with little to no practical projects whatsoever. So, whenever I tried starting this endeavor to learn about Deep Learning, just after a day or two, I’d get frustrated and abandon it altogether.</p>
+
+<p>You can’t imagine my surprise when I learned about this course, <a href="http://course.fast.ai/">fast.ai</a>, taught by <strong>Jeremy Howard</strong>. The approach that they are using to teach Deep Learning is quite opposite to what’s being used elsewhere. Instead of diving deeper into the technicalities from the start, they are using a top-down code-first approach where they let the student experiment with different algorithms and techniques by implementing them to solve real world problems, like from Kaggle competitions etc, from the first lecture.</p>
+
+<p>This is what I’ve been looking for all along. A way to ease into the Deep Learning field, experiment with different models, and when I get comfortable then delve deeper into the mathematics.</p>
+
+<p>The main objective or the teaching strategy being followed by Jeremy in this course seems quite interesting and attractive but let’s see how effective it is and how well it is executed.</p>
+
+<p>I’m hopeful that this is going to be an amazing experience for me, I’ll learn a lot and practice a lot. I’ll keep blogging about my experience taking this course, the things I liked, the things I didn’t, the problems I faced and solutions to those. Let’s see how it turns out.</p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="aadimator/aadam_dev"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/reviews/course/2017/06/15/fast-ai-initial-thoughts.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/aadimator" target="_blank" title="aadimator"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/aadimator" target="_blank" title="aadimator"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
