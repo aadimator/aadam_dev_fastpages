@@ -1,6 +1,7 @@
 ---
 title: PyTorch Scholarship Challenge from Facebook
 date: 2019-01-22
+layout: post
 description: My review of the PyTorch Scholarship Challenge from Facebook, offered on Udacity, and what makes it one of the most memorable experiences of my life.
 categories: [Deep Learning, Reviews, Udacity]
 image: images/pytorch_scholarship_header.png

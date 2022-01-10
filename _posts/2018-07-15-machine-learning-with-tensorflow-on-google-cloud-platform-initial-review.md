@@ -1,6 +1,7 @@
 ---
 title: Machine Learning with TensorFlow on Google Cloud Platform Specialization
 date: 2018-07-15
+layout: post
 description: Initial thoughts on the new specialization from Google offered on Coursera platform, Machine Learning with TensorFlow on Google Cloud Platform Specialization.
 categories: [Machine Learning, Reviews, Deep Learning]
 toc: false
@@ -15,7 +16,7 @@ I came across this specialization from Google on Coursera, [Machine Learning wit
 
 I've finished first course in the specialization till now, [How Google does Machine Learning](https://www.coursera.org/learn/google-machine-learning), and I'm half way through the second course. In the first course, they introduced us to the Google Cloud Platform (GCP) and showed how to start a VM instance and how to use the Data Lab to quickly spin out an instance for Machine Learning and Data Science related tasks. We also completed a few labs to get hands-on practice with the GCP platform and to see how it all works.
 
-![How Google does Machine Learning - Coursera](https://res-5.cloudinary.com/aadimator/image/upload/q_auto/v1/blog/How-Google-does-Machine-Learning---Coursera-1.png)
+![](https://res-5.cloudinary.com/aadimator/image/upload/q_auto/v1/blog/How-Google-does-Machine-Learning---Coursera-1.png "How Google does Machine Learning - Coursera")
 
 Although the lecture videos are very well made and informative, the thing that I love about this specialization is [QwikLabs](https://qwiklabs.com/). The good people of Google have provided the students with free cloud credits in the form of QwikLabs so we could get hands-on practice with the GCP and try out what we are learning in the course. If we had to spend our own credits to try-out things in the GCP, then I'm positive that most of us would've just watched the videos and leave out practice for some other day. This initiative to give out sandbox environments for learning purposes is much appreciated.
 

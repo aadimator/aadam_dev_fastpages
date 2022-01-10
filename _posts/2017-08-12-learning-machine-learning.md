@@ -1,6 +1,7 @@
 ---
 title: Learning Machine Learning
 date: 2017-08-12
+layout: post
 description: A while back, I started the Deep Learning course provided by fast.ai and after going through the first few lessons, I felt like I needed to brush up on my Machine Learning skills first if I want to get a deeper understanding of the Deep Learning. It wasn’t that they were going at an extra pace or were covering hard mathematical problems and complex algorithms, but they did require us to learn some material on our own, by reading articles or watching some videos or simulations etc.
 categories: [Machine Learning, Reviews, Udacity, Coursera]
 toc: false
@@ -13,7 +14,7 @@ A while back, I started the Deep Learning course provided by fast.ai and after g
 
 Anyways, I decided to put the [fast.ai](http://fast.ai/) course on hold for a while and complete a few courses on Machine Learning first. It’s not that I didn’t have any Machine Learning experience before taking that course.
 
-![background](https://res-4.cloudinary.com/aadimator/image/upload/q_auto/v1/blog/Machine-Learning-Engineer---Nanodegree.png)
+![](https://res-4.cloudinary.com/aadimator/image/upload/q_auto/v1/blog/Machine-Learning-Engineer---Nanodegree.png)
 
 I’ve completed the [Machine Learning Nanodegree](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009) offered by Udacity. It was an amazing experience as I learned a lot of new things and had some hands-on experience, with the problems we face in machine learning and the libraries, tools and the algorithms that are mostly used to solve those problems, by completing several projects. My **Capstone Project** was related to a **Computer Vision** problem, the famous dogs-vs-cats classification problem, and I solved it using **CNN**. So, I had a little bit of experience with Deep Learning as well.
 
@@ -23,7 +24,7 @@ This was the perfect course for me as I had some experience with Machine Learnin
 
 You can’t imagine my surprise when I found out today that Andrew Ng released 5 new courses on Deep Learning, the [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning).
 
-![background](https://res-1.cloudinary.com/aadimator/image/upload/q_auto/v1/blog/deep-learning-specialization.png)
+![](https://res-1.cloudinary.com/aadimator/image/upload/q_auto/v1/blog/deep-learning-specialization.png)
 
 Given the quality of the first [Machine Learning](https://www.coursera.org/learn/machine-learning) course by Andrew Ng and the positive feedback it got, chances are that this specialization is going to be quite amazing as well.
 

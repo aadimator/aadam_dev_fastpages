@@ -3,7 +3,7 @@ title: Odoo — Wkhtmltopdf Installation
 date: 2017-07-25
 description: Recently, as I was working on Odoo, I came across a problem when I wanted to print a report. It was generating the HTML report just fine but when I wanted to download that report, it was having difficulty converting that report into PDF. Basically, the version of wkhtmltopdf library wasn’t compatible with the current setup.
 layout: post
-categories: ["setup"]
+categories: ["Setup"]
 toc: false
 comments: true
 hide: false
