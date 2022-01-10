@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-\_as-salāmu ʿalaykum (\_peace be upon you). I'm Aadam and welcome to my blog. I'm a machine learning engineer, motion designer, illustrator, and an all-around nerd. I'm super excited to share what I'm learning here on this blog. I'm also available for **freelance** work as well. Feel free to contact me.
+as-salāmu ʿalaykum (peace be upon you). I'm [Aadam](https://aadimator.com/) and welcome to my blog. I'm a machine learning engineer, motion designer, illustrator, and an all-around nerd. I'm super excited to share what I'm learning here on this blog. I'm also available for **freelance** work as well. Feel free to [contact me](https://aadimator.com/work/) if you want.
 
 I started this blog for two purposes: to write about what I'm learning in my own words, and to share my perspectives and reflections with others and my future self. The former reason serves mainly to reinforce what I'm learning (you don't really know something unless you can teach it!), while the latter is simply a way for me to share what reflections I've found helpful for me and store a snapshot of my views over the course of my life. Many of the blog posts are a living document, so I'll come back and edit things, add new info, switch out the graphics, etc. These are also pretty informal posts, more of a quick brain dump than a work of literary art.
 
@@ -12,9 +12,9 @@ In all honesty, this is more of a journal than a blog, but I've chosen to make t
 
 ## A little about myself
 
-I love to program. I love the thrill, the adrenaline rush after solving a complex problem. I participated in several Speed Programming competitions held throughout the country, representing my University.
+I love to program. I love the thrill, the adrenaline rush after solving a complex problem. I participated in several Speed Programming competitions held throughout the country, representing my University during my Bachelor years.
 
-I'm a huge adventurer, and I love to travel. I've traveled to the northern areas of Pakistan, like Naaraan, Khaghan, Murree etc. The 8+ hours long journey, across the ragged mountains and slippery pathway, to reach the Ansuu Jheel is one of the most memorable moments of my life.
+I'm a huge adventurer, and I love to travel. I've traveled to the northern areas of Pakistan, like Naaraan, Khaghan, Murree etc. The 8+ hours long journey, across the ragged mountains and slippery pathways, to reach the Ansuu Jheel is one of the most memorable moments of my life.
 
 I love reading books. From fantasy novels; like Lord of the Rings, Harry Potter; to self-help books, from Science to Literature, I've read quite a few. I also like to binge-watch drama series sometimes (quite a lot frankly). I like to play Table Tennis and I've won several competition as well, representing my University as well as my district.
 
@@ -24,9 +24,9 @@ My interests span from engineering to design to neuroscience and many fields in 
 
 ## Connect with me
 
-| Site      | Link                                |
-| --------- | ----------------------------------- |
-| LinkedIn  | https://linkedin.com/in/aadimator   |
-| GitHub    | http://github.com/aadimator         |
-| Twitter   | https://twitter.com/aadimator       |
-| Instagram | https://www.instagram.com/aadimator |
+| Site      | Link                                                                       |
+| --------- | -------------------------------------------------------------------------- |
+| LinkedIn  | [https://linkedin.com/in/aadimator](https://linkedin.com/in/aadimator)     |
+| GitHub    | [http://github.com/aadimator](http://github.com/aadimator)                 |
+| Twitter   | [https://twitter.com/aadimator](https://twitter.com/aadimator)             |
+| Instagram | [https://www.instagram.com/aadimator](https://www.instagram.com/aadimator) |
