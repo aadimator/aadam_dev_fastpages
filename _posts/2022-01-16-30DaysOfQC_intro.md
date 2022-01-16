@@ -1,11 +1,11 @@
 ---
-title: My \#30DaysQC Challenge
-description: An introduction to my \#30DaysQC Challenge - Why and what I'll be doing for the next 30 Days.
+title: My #30DaysOfQC Challenge
+description: An introduction to my #30DaysOfQC Challenge - Why and what I'll be doing for the next 30 Days.
 layout: post
 date: 2022-01-15
 image: images/30DaysOfQC_intro.svg
-categories: [Challenge, Quantum Computing, 30DaysQC]
-toc: false
+categories: [Challenge, Quantum Computing, 30DaysOfQC]
+toc: true
 comments: true
 hide: false
 search_exclude: false
@@ -15,9 +15,13 @@ search_exclude: false
 
 I have been meaning to delve deeper into the spooky realm of Quantum Computing for a while now, but every time some other distraction (Deep learning, Reinforcement learning, Julia, ML Competitions etc.) diverts my attention. This time, I've decided to stick with the plan and see this through to the end. This #30DaysOfQC challenge is a measure to make it more probable, InshaAllah.
 
+![]({{ site.baseurl }}/images/30DaysOfQC_intro.svg "30DaysOfQC Challenge Intro")
+
 # What is #30DaysOfQC Challenge?
 
 Much like the [#30DaysOfCode](https://twitter.com/hashtag/30DaysOfCode) challenge, where the participants strive to code for 30 consecutive days, I'll be committing to learning about Quantum Computing for minimum 1 hour every day for the next 30 days. This includes both the theory, as well as the practical aspect of it. Same as the #30DaysOfCode challenge, I'll be publicly posting my progress; on [Twitter](https://twitter.com/aadimator), this blog, and [YouTube](https://www.youtube.com/channel/UC8bGVXxkT5xpOBZ3h94jt9g) (hopefully 🙄).
+
+{% twitter https://twitter.com/aadimator/status/1482327344933228544 %}
 
 # Why I'm doing this?
 
