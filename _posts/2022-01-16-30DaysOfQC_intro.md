@@ -4,12 +4,14 @@ description: An introduction to my 30DaysOfQC Challenge - Why and what I'll be d
 layout: post
 date: 2022-01-15
 image: images/30DaysOfQC_intro.svg
-categories: [Challenge, Quantum Computing, 30DaysOfQC]
+categories: [Quantum Computing, 30DaysOfQC]
 toc: true
 comments: true
 hide: false
 search_exclude: false
 ---
+
+{% youtube https://www.youtube.com/embed/rLw-DZw-bkQ %}
 
 # Introduction
 
