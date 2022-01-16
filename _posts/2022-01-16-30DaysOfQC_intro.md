@@ -1,6 +1,6 @@
 ---
-title: My #30DaysOfQC Challenge
-description: An introduction to my #30DaysOfQC Challenge - Why and what I'll be doing for the next 30 Days.
+title: My 30 Days of Quantum Computing Challenge
+description: An introduction to my 30DaysOfQC Challenge - Why and what I'll be doing for the next 30 Days.
 layout: post
 date: 2022-01-15
 image: images/30DaysOfQC_intro.svg
