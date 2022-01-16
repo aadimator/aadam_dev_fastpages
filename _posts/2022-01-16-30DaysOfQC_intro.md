@@ -11,7 +11,7 @@ hide: false
 search_exclude: false
 ---
 
-{% youtube https://www.youtube.com/embed/rLw-DZw-bkQ %}
+> youtube: https://youtu.be/rLw-DZw-bkQ
 
 # Introduction
 
