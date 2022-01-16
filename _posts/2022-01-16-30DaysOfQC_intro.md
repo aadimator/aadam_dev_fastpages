@@ -3,7 +3,7 @@ title: My 30 Days of Quantum Computing Challenge
 description: An introduction to my 30DaysOfQC Challenge - Why and what I'll be doing for the next 30 Days.
 layout: post
 date: 2022-01-15
-image: images/30DaysOfQC_intro.svg
+image: images/30DaysOfQC/Day_00_intro.svg
 categories: [Quantum Computing, 30DaysOfQC]
 toc: true
 comments: true
@@ -11,13 +11,13 @@ hide: false
 search_exclude: false
 ---
 
-> youtube: https://youtu.be/rLw-DZw-bkQ
+{% include youtube.html content='https://www.youtube.com/embed/rLw-DZw-bkQ' %}
 
 # Introduction
 
 I have been meaning to delve deeper into the spooky realm of Quantum Computing for a while now, but every time some other distraction (Deep learning, Reinforcement learning, Julia, ML Competitions etc.) diverts my attention. This time, I've decided to stick with the plan and see this through to the end. This #30DaysOfQC challenge is a measure to make it more probable, InshaAllah.
 
-![]({{ site.baseurl }}/images/30DaysOfQC_intro.svg "30DaysOfQC Challenge Intro")
+![]({{ site.baseurl }}/images/30DaysOfQC/Day_00_intro.svg "30DaysOfQC Challenge Intro")
 
 # What is #30DaysOfQC Challenge?
 
