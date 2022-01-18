@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Day 2 of 30DaysOfQC Challenge | aadam.dev</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Day 2 of 30DaysOfQC Challenge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I completed the free pathways on the Black Opal Platform. I’m sharing my notes (PDF as well) here. I’ve also started reading the Introduction to Classical and Quantum Computing]] book by Thomas Wong." />
+<meta property="og:description" content="I completed the free pathways on the Black Opal Platform. I’m sharing my notes (PDF as well) here. I’ve also started reading the Introduction to Classical and Quantum Computing]] book by Thomas Wong." />
+<link rel="canonical" href="https://aadam.dev/quantum%20computing/30daysofqc/2022/01/17/30DaysOfQC_Day_02.html" />
+<meta property="og:url" content="https://aadam.dev/quantum%20computing/30daysofqc/2022/01/17/30DaysOfQC_Day_02.html" />
+<meta property="og:site_name" content="aadam.dev" />
+<meta property="og:image" content="https://aadam.dev/images/30DaysOfQC/Day_02.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-17T00:00:00-06:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://aadam.dev/images/30DaysOfQC/Day_02.svg" />
+<meta property="twitter:title" content="Day 2 of 30DaysOfQC Challenge" />
+<script type="application/ld+json">
+{"url":"https://aadam.dev/quantum%20computing/30daysofqc/2022/01/17/30DaysOfQC_Day_02.html","@type":"BlogPosting","image":"https://aadam.dev/images/30DaysOfQC/Day_02.svg","headline":"Day 2 of 30DaysOfQC Challenge","dateModified":"2022-01-17T00:00:00-06:00","datePublished":"2022-01-17T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://aadam.dev/quantum%20computing/30daysofqc/2022/01/17/30DaysOfQC_Day_02.html"},"description":"I completed the free pathways on the Black Opal Platform. I’m sharing my notes (PDF as well) here. I’ve also started reading the Introduction to Classical and Quantum Computing]] book by Thomas Wong.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://aadam.dev/feed.xml" title="aadam.dev" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" /><script src="https://hypothes.is/embed.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css" integrity="sha512-g1pxMKWnqCJA5bTMwnw0Xwe0KQAfnj47+1pB0oISMqVFjm8Bg1vA3RENj+iGunE9j4zDLPWbau7jirWwJyshdQ==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.js" integrity="sha512-iegr9Cbvw50rG0agCU/1HUJ0w5GflT+Lsk2SRI1jOjEC15RRgJW9vMLDFxIF3mBxoIDIS41fnENNuSZD+WhIOA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/contrib/auto-render.min.js" integrity="sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js" integrity="sha512-M36RUChWzAh1veeenRZFql7HydLEnkYmoloiCvVrhz402UZgKI93qkV7SsaxtVKdN95Wzajh39ysrXCq34NTsg==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">aadam.dev</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Day 2 of 30DaysOfQC Challenge</h1><p class="page-description">I completed the free pathways on the Black Opal Platform. I'm sharing my notes (PDF as well) here. I've also started reading the Introduction to Classical and Quantum Computing]] book by Thomas Wong.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-01-17T00:00:00-06:00" itemprop="datePublished">
+        Jan 17, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#Quantum Computing">Quantum Computing</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#30DaysOfQC">30DaysOfQC</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <table>
+  <tbody>
+    <tr>
+      <td>The second day of the challenge was relatively more productive as I’m starting to figure out a workflow that works for me. I completed the last freely available pathway, <a href="https://black.q-ctrl.com/skill/measurement">Measurement</a>, on the Black Opal platform. I also started reading the [[wongIntroductionClassicalQuantum</td>
+      <td>Introduction to Classical and Quantum Computing]] book by Thomas Wong.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/30DaysOfQC/Day_02.svg" alt="" title="Day 2 of the #30DaysOfQC Challenge" /></p>
+
+<h1 id="lessons-learned">Lessons learned</h1>
+
+<p>The Measurement Pathway consisted of 4 key topics, explaining the problem of measurement in quantum computing. We learned how a measurement will always result in one of the two possible computational states based on some probability, defined by the state of the qubit before the measurement. We saw how there are two types of movements: smooth rotations because of the application of quantum gates, and discontinuous movement because of the measurement. We also say how important the timing of performing the measurement is as it governs the probability of obtaining the desired results.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>We learned about the <strong>Born rule</strong> which states that the probability of collapsing to $\ket 0$ when the state upon measurement is $\ket \psi$ is exactly $</td>
+      <td>\alpha</td>
+      <td>^2$. Similarly, the probability of collapsing to $\ket 1$ is $</td>
+      <td>\beta</td>
+      <td>^2$. We saw that a phase $\phi$ has no effect on the probability of collapsing to a particular state. We briefly learned about the <strong>logical qubits</strong> that are used to mitigate the effect of <strong>N\noise</strong> in quantum computing.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We also saw how to perceive the state of a qubit as humans. Different methodologies can be used in different physical systems to learn about the state of qubit. In the end, we learned about the philosophical reasonings and the many theories that try to explain the quantum phenomenon, and concluded by saying that we don’t really need to know what a qubit really is in order to utilize it for computation.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 2 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a>: Finished the last freely available path on Black Opal. It was a very thought-provoking, informative, and entertaining experience. Thanks, <a href="https://twitter.com/qctrlHQ?ref_src=twsrc%5Etfw">@qctrlHQ</a> for such a great introductory resource. Only if I could continue with this 😥 but sadly, financial reasons 😕 <a href="https://t.co/enSR4jdWFA">pic.twitter.com/enSR4jdWFA</a></p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1482981300231409665?ref_src=twsrc%5Etfw">January 17, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<hr />
+
+<h1 id="moving-forward">Moving forward</h1>
+
+<p>I’m now beginning to have a better system for my note-taking setup. I’m primarily using <a href="https://www.zotero.org/">Zotero</a> as my reference manager and PDF Reader/Annotator. For note-taking, I’m using the amazing <a href="http://obsidian.md/">Obsidian App</a>. I’ll write a detailed article (or maybe a YouTube video) showcasing my setup and automation processes.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Now, I’m reading the [[wongIntroductionClassicalQuantum</td>
+      <td>Introduction to Classical and Quantum Computing]] book by Thomas Wong. I’m thinking about using the amazing <a href="https://github.com/zsviczian/obsidian-excalidraw-plugin">Excalidraw plugin</a> by <a href="https://www.youtube.com/channel/UCC0gns4a9fhVkGkngvSumAQ/featured">Zsolt Viczián</a> to take visual notes so I can share those with you guys. Let’s see how that goes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p>If you have any suggestions, feel free to comment below. Talk to you tomorrow, InshaAllah.</p>
+
+<h1 id="pdf-notes">PDF Notes</h1>
+
+<p>I’m posting all the notes I’ve taken from the 3 Pathways on Black Opal, because I haven’t posted them previously (Only for the 2nd Pathway in <a href="./2022-01-16-30DaysOfQC_Day_01.md">Day 1</a>).</p>
+
+<object data="/assets/pdf/30DaysOfQC/Black_Opal_Notes.pdf" title="PDF Notes for Black Opal" width="100%" height="1000" type="application/pdf">
+
+<p>If the PDF display is not working, you can download it from here: <a href="/assets/pdf/30DaysOfQC/Black_Opal_Notes.pdf">Link</a></p>
+</object>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="aadimator/aadam_dev"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/quantum%20computing/30daysofqc/2022/01/17/30DaysOfQC_Day_02.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>My personal blog to learn in public.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/aadimator" target="_blank" title="aadimator"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/aadimator" target="_blank" title="aadimator"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
