@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Day 9-12 of 30DaysOfQC Challenge | aadam.dev</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Day 9-12 of 30DaysOfQC Challenge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I’ve finally finished the fourth chapter of the Introduction to Classical and Quantum Computing book by Thomas Wong. A brief summary, PDF notes, and future plans for this." />
+<meta property="og:description" content="I’ve finally finished the fourth chapter of the Introduction to Classical and Quantum Computing book by Thomas Wong. A brief summary, PDF notes, and future plans for this." />
+<link rel="canonical" href="https://aadam.dev/quantum%20computing/30daysofqc/2022/01/21/30DaysOfQC_Day_12.html" />
+<meta property="og:url" content="https://aadam.dev/quantum%20computing/30daysofqc/2022/01/21/30DaysOfQC_Day_12.html" />
+<meta property="og:site_name" content="aadam.dev" />
+<meta property="og:image" content="https://aadam.dev/images/30DaysOfQC/Day_012.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-21T00:00:00-06:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://aadam.dev/images/30DaysOfQC/Day_012.svg" />
+<meta property="twitter:title" content="Day 9-12 of 30DaysOfQC Challenge" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://aadam.dev/quantum%20computing/30daysofqc/2022/01/21/30DaysOfQC_Day_12.html"},"url":"https://aadam.dev/quantum%20computing/30daysofqc/2022/01/21/30DaysOfQC_Day_12.html","@type":"BlogPosting","image":"https://aadam.dev/images/30DaysOfQC/Day_012.svg","headline":"Day 9-12 of 30DaysOfQC Challenge","dateModified":"2022-01-21T00:00:00-06:00","datePublished":"2022-01-21T00:00:00-06:00","description":"I’ve finally finished the fourth chapter of the Introduction to Classical and Quantum Computing book by Thomas Wong. A brief summary, PDF notes, and future plans for this.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://aadam.dev/feed.xml" title="aadam.dev" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" /><script src="https://hypothes.is/embed.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css" integrity="sha512-g1pxMKWnqCJA5bTMwnw0Xwe0KQAfnj47+1pB0oISMqVFjm8Bg1vA3RENj+iGunE9j4zDLPWbau7jirWwJyshdQ==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.js" integrity="sha512-iegr9Cbvw50rG0agCU/1HUJ0w5GflT+Lsk2SRI1jOjEC15RRgJW9vMLDFxIF3mBxoIDIS41fnENNuSZD+WhIOA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/contrib/auto-render.min.js" integrity="sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js" integrity="sha512-M36RUChWzAh1veeenRZFql7HydLEnkYmoloiCvVrhz402UZgKI93qkV7SsaxtVKdN95Wzajh39ysrXCq34NTsg==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">aadam.dev</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Day 9-12 of 30DaysOfQC Challenge</h1><p class="page-description">I've finally finished the fourth chapter of the Introduction to Classical and Quantum Computing book by Thomas Wong. A brief summary, PDF notes, and future plans for this.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-01-21T00:00:00-06:00" itemprop="datePublished">
+        Jan 21, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#Quantum Computing">Quantum Computing</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#30DaysOfQC">30DaysOfQC</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Although it took me four long days to complete the fourth chapter of the <a href="http://www.thomaswong.net/introduction-to-classical-and-quantum-computing.pdf">Introduction to Classical and Quantum Computing - Thomas Wong</a> book, I’ve finally done it. The relative length, dense topics, and some personal obligations were the main cause of delay, but it was a worthwhile journey.</p>
+
+<p><img src="/images/30DaysOfQC/Day_12.svg" alt="" title="Day 12 of the #30DaysOfQC Challenge" /></p>
+
+<h1 id="lessons-learned">Lessons learned</h1>
+
+<p>We started off by learning about <a href="https: //entanglion.github.io">Entanglion</a> game, whose mechanics were inspired by the rules of quantum mechanics. We then learned about tensor products and how they can be used to represent multiple qubits. We also learned about different conventions, <em>Little endian</em> and <em>Big endian</em>, to represent a binary string as a decimal. We saw why it is difficult for classical computers to simulate a quantum computer and the evidence (no proof as of yet) to support this. We learned about the <strong>Kronecker product</strong> and how measuring multiple qubits simultaneously and measuring single qubits one after another gives the same results.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 9 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a>: I&#39;ve started reading the 4th chapter of Thomas Wong&#39;s Book on <a href="https://twitter.com/hashtag/QuantumComputing?src=hash&amp;ref_src=twsrc%5Etfw">#QuantumComputing</a>. It is about multi-qubit systems, entanglement, and quantum gates. It&#39;s quite a lengthy one. Will probably take 2 to 3 days.</p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1485693717465944070?ref_src=twsrc%5Etfw">January 24, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>We then delved into the realm of quantum <strong>Entanglement</strong>. We were first introduced to the product states, i.e. those states that can be factored into individual qubit states, and then we learned about the entangled states, i.e. those states that cannot be factored. This entanglement property is one of the key contributors to the power of quantum computing over the classical one, and results in some ingenious algorithms.</p>
+
+<p>After that, we learned about quantum gates, how single qubit quantum gates can be applied to multiple qubits by using the tensor product, and also how two-qubit quantum gates act on multiple qubits. We then learned about the <strong>Toffoli Gate</strong> because of which we know that quantum computers can efficiently do everything a classical computer can efficiently do (because Toffoli gate is universal for classical computing). We then learned about the No-Cloning Theorem which states that quantum information cannot generally be cloned.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 10 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a>: Still on the fourth chapter, but I&#39;m hopeful that it&#39;ll be done by tomorrow. My Notes are coming along nicely as well (graph view of notes using <a href="https://twitter.com/obsdmd?ref_src=twsrc%5Etfw">@obsdmd</a> ) I think it&#39;ll be massive by the time I&#39;m done with the Book. <a href="https://twitter.com/hashtag/QuantumComputing?src=hash&amp;ref_src=twsrc%5Etfw">#QuantumComputing</a> <a href="https://t.co/4mlHKlgNfD">pic.twitter.com/4mlHKlgNfD</a></p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1486032278551769098?ref_src=twsrc%5Etfw">January 25, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>We then learned how to create a Quantum Adder using the quantum gates that we’ve learned about previously. We took inspiration from the Classical Ripple-Carry Adder, which we learned about in Chapter 1, and replaced the classical gates with their quantum counterparts and implemented a Quantum Ripple-Carry Adder. It can be used to act on superpositions. One important thing to remember is that even though it can act on superpositions at the same time, we cannot measure the results of all the calculations. We would only be able to get a single result/measurement because of the collapsing property of qubits, so we can’t think of quantum computers as big parallel computers.</p>
+
+<p>Following that, we learned about universal quantum gates and gate sets. We first learned about some components/properties that a universal gate set should have, i.e. superposition, entanglement, complex amplitudes, not from <strong>Clifford group</strong>. We’re not sure if these are all of the requirements for a gate set to be universal. We then learned about the SOLOVAY-KITAEV THEOREM which says that with any universal gate set, we can approximate a quantum gate to some precision.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 11 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a>: Although I was hoping to finish the 4th chapter today, I wasn&#39;t able to (but came really close). Instead of trying to cram it all tonight, I decided to finish it tomorrow, IA. Tomorrow I&#39;ll be learning about Error Correction in <a href="https://twitter.com/hashtag/QuantumComputing?src=hash&amp;ref_src=twsrc%5Etfw">#QuantumComputing</a>,  Shor Algo</p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1486408544085753856?ref_src=twsrc%5Etfw">January 26, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>Finally, we learned about Quantum Error Correction. There are two types of errors that can be encountered, bit-flip error and phase-flip error. We can used bit-flip code, which encodes each logical qubit using three-physical qubits. We can then use the parity of the bit-string to determine if an error has occurred without actually measuring the value (and collapsing) and we can then use an $X$ Gate to correct the error. For the phase-flip code, we employ the same strategy, encoding each logical qubit using three physical qubits, and using the parity to determine the presence of some error, and then use the $Z$ gate to correct it. The Shor Code combines both of these encodings into a single encoding, where each logical qubit is represented by nine physical qubits. It can detect and correct both bit-flip and phase-flip errors.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 12 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a> Finished with the fourth chapter, finally. Started the fifth as well. Tomorrow I&#39;ll write a brief summary and post my notes of the fourth chapter on my blog, InshaAllah. <a href="https://twitter.com/hashtag/QuantumComputing?src=hash&amp;ref_src=twsrc%5Etfw">#QuantumComputing</a></p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1486754466917498884?ref_src=twsrc%5Etfw">January 27, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<hr />
+
+<h1 id="moving-forward">Moving forward</h1>
+
+<p>Yesterday, respected <strong>Thomas Wong</strong> tweeted about my challenge:</p>
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">This person is going through my entire book and is posting their journey on their blog. <a href="https://t.co/rPoWvQqLL5">https://t.co/rPoWvQqLL5</a></p>&mdash; Tom Wong (@thomasgwong) <a href="https://twitter.com/thomasgwong/status/1486769787040583686?ref_src=twsrc%5Etfw">January 27, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<p>Now I’m more inclined and motivated to finish this journey and produce better notes/content (No pressure 🙄). Furthermore, sharing PDF notes isn’t the best option, as I’ve known from the start, but now I’m noticing its limitations more and more. I’m using Obsidian to take my notes and most of the notes have links to other notes or I’ll note certain details about a specific topic separately and just link to it in the main note. So most of the detailed notes aren’t visible on the PDF I share and only a link to that note is present (which is of no use). I’ll try to get a draft version of my <code class="language-plaintext highlighter-rouge">notes</code> website up ASAP, so you guys can have a more interactive way to view the notes. You’ll be able to follow the links and dive deeper into the topics that you want to explore further.</p>
+
+<p>I’m also thinking about creating <a href="https://en.wikipedia.org/wiki/Sketchnoting">Sketchnotes</a> for this. I have no previous experience with these types of notes, and I know I’ll be really bad at it, but you’ve got to start somewhere, right? That will be a great way to visualize what I’m learning, reinforce it, and share as a small cohesive package. Let’s see how it goes.</p>
+
+<hr />
+
+<p>If you have any suggestions or questions, feel free to comment below. Talk to you next time, InshaAllah.</p>
+
+<h1 id="pdf-notes">PDF Notes</h1>
+
+<p>My notes on the fourth Chapter of the Thomas Wong’s Introduction to Classical and Quantum Computing book.</p>
+<object data="/assets/pdf/30DaysOfQC/wongIntroductionClassicalQuantum_Chapter04.pdf" title="PDF Notes Chapter 4 of Thomas Wong book" width="100%" height="1000" type="application/pdf">
+
+<p>If the PDF display is not working, you can download it from here: <a href="/assets/pdf/30DaysOfQC/wongIntroductionClassicalQuantum_Chapter04.pdf">Link</a></p>
+</object>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="aadimator/aadam_dev"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/quantum%20computing/30daysofqc/2022/01/21/30DaysOfQC_Day_12.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>My personal blog to learn in public.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/aadimator" target="_blank" title="aadimator"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/aadimator" target="_blank" title="aadimator"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
