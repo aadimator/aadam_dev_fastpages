@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Day 13-22 of 30DaysOfQC Challenge | aadam.dev</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Day 13-22 of 30DaysOfQC Challenge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I am finally done with the amazing introductory Quantum Computing book by Thomas Wong. Here I’ll briefly describe what I’ve learned, and what I’m planning to do next." />
+<meta property="og:description" content="I am finally done with the amazing introductory Quantum Computing book by Thomas Wong. Here I’ll briefly describe what I’ve learned, and what I’m planning to do next." />
+<link rel="canonical" href="https://aadam.dev/quantum%20computing/30daysofqc/2022/02/06/30DaysOfQC_Day_22.html" />
+<meta property="og:url" content="https://aadam.dev/quantum%20computing/30daysofqc/2022/02/06/30DaysOfQC_Day_22.html" />
+<meta property="og:site_name" content="aadam.dev" />
+<meta property="og:image" content="https://aadam.dev/images/30DaysOfQC/Day_22.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-06T00:00:00-06:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://aadam.dev/images/30DaysOfQC/Day_22.svg" />
+<meta property="twitter:title" content="Day 13-22 of 30DaysOfQC Challenge" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-02-06T00:00:00-06:00","datePublished":"2022-02-06T00:00:00-06:00","description":"I am finally done with the amazing introductory Quantum Computing book by Thomas Wong. Here I’ll briefly describe what I’ve learned, and what I’m planning to do next.","headline":"Day 13-22 of 30DaysOfQC Challenge","image":"https://aadam.dev/images/30DaysOfQC/Day_22.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://aadam.dev/quantum%20computing/30daysofqc/2022/02/06/30DaysOfQC_Day_22.html"},"url":"https://aadam.dev/quantum%20computing/30daysofqc/2022/02/06/30DaysOfQC_Day_22.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://aadam.dev/feed.xml" title="aadam.dev" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" /><script src="https://hypothes.is/embed.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css" integrity="sha512-g1pxMKWnqCJA5bTMwnw0Xwe0KQAfnj47+1pB0oISMqVFjm8Bg1vA3RENj+iGunE9j4zDLPWbau7jirWwJyshdQ==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.js" integrity="sha512-iegr9Cbvw50rG0agCU/1HUJ0w5GflT+Lsk2SRI1jOjEC15RRgJW9vMLDFxIF3mBxoIDIS41fnENNuSZD+WhIOA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/contrib/auto-render.min.js" integrity="sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js" integrity="sha512-M36RUChWzAh1veeenRZFql7HydLEnkYmoloiCvVrhz402UZgKI93qkV7SsaxtVKdN95Wzajh39ysrXCq34NTsg==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">aadam.dev</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Day 13-22 of 30DaysOfQC Challenge</h1><p class="page-description">I am finally done with the amazing introductory Quantum Computing book by Thomas Wong. Here I'll briefly describe what I've learned, and what I'm planning to do next.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-02-06T00:00:00-06:00" itemprop="datePublished">
+        Feb 6, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#Quantum Computing">Quantum Computing</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#30DaysOfQC">30DaysOfQC</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>It feels really great to see my progress, and more importantly, my consistency during this challenge. I’m almost finished with the challenge. Just a week or so left. After that, I’ll probably start another round. But first, let’s discuss what I did these past $10$ days or so, and why I didn’t update my blog in the meanwhile.</p>
+
+<p><img src="/images/30DaysOfQC/Day_22.svg" alt="" title="Day 22 of the #30DaysOfQC Challenge" /></p>
+
+<h1 id="lessons-learned">Lessons learned</h1>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 13 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a>: I&#39;ve successfully deployed my automated notes website. You can see it here: <a href="https://t.co/KqWrLVzFVW">https://t.co/KqWrLVzFVW</a><br /><br />I&#39;ve also started the fifth chapter of Thomas Wong&#39;s book and I&#39;ve started Quantum Computing: from Basics to the Cutting Edge Specialization on Coursera.</p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1487133072424378369?ref_src=twsrc%5Etfw">January 28, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>I’m finally done with the <a href="http://www.thomaswong.net/introduction-to-classical-and-quantum-computing.pdf">Introduction to Classical and Quantum Computing - Thomas Wong</a>. It was a great read, an amazing introductory resource. I’ll write a detailed review of the book in a separate blogpost so I’ll skip my ravings for now. Here I’ll just briefly mention what I learned these past few days.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 14 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a>: Because of load-shedding throughout the day, today wasn&#39;t as productive as I would&#39;ve liked but I still managed to study <a href="https://twitter.com/hashtag/QuantumComputing?src=hash&amp;ref_src=twsrc%5Etfw">#QuantumComputing</a> for more than 2 hours (Thomas Wong&#39;s Book + Coursera Specialization).</p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1487490944337334273?ref_src=twsrc%5Etfw">January 29, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>In the fifth chapter of the book, we were introduced to the amazing ecosystem by IBM for quantum programming and simulation, and we learned about <code class="language-plaintext highlighter-rouge">OpenQASM</code>, which is a programming language for writing quantum circuits. We also coded some simple programs in <code class="language-plaintext highlighter-rouge">Qiskit</code>, which is a Python toolkit for writing programs for quantum computers. We also briefly saw some other programming languages that are being used in the industry and their ecosystem.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 15 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a> Came down with flu and fever, but still managed to finish the 5th chapter of the <a href="https://twitter.com/hashtag/QuantumComputing?src=hash&amp;ref_src=twsrc%5Etfw">#QuantumComputing</a> book by Thomas Wong. Would&#39;ve loved to go further, and also work on Coursera Specialization, but 🤧<br />Halfway through the challenge. Yay 🎉</p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1487847893625192453?ref_src=twsrc%5Etfw">January 30, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>In chapter 6, we learned about the <strong>Entanglement</strong> in detail, the difference between maximally entangled and partially entangled states, and various applications of this phenomenon in practical quantum computing algorithms. We learned about the bell inequalities, their history, and the different theories for the explanation of quantum mechanics. We then learned about some important applications of entanglement, like superdense coding, quantum teleportation, and quantum key distribution.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 16 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a> Although I&#39;m not fully recovered from flu/fever, I&#39;m better than yesterday. I was able to start the 6th Chapter and I&#39;ve read it halfway through. Hopefully, I&#39;ll finish that tomorrow.</p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1488217779316604946?ref_src=twsrc%5Etfw">January 31, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>The chapter 7 was all about quantum algorithms. We first learned about the ideas of circuit complexity and query complexity as they can be used to determine how efficient a quantum algorithm is as compared to its classical counterpart. We were then given a brief introduction of the various problems, their classical solutions (along with their complexities) and their quantum solutions. The quantum algorithms included Deutsch’s Algorithm, Deutsch-Jozsa Algorithm, Deutsch-Jozsa Algorithm, Simon’s Algorithm, Grover’s Algorithm, Quantum Fourier Transform, and Shor’s Algorithm among others.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 17 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a> Finished with the 6th chapter of Thomas Wong&#39;s book. It included many important topics (super-dense coding, quantum teleportation, quantum key distribution) I&#39;m still not fully recovered from the flu but hopefully, I&#39;ll be up and running from tomorrow, IA.</p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1488539881722761219?ref_src=twsrc%5Etfw">February 1, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>The last chapter was all about some future directions to get a job and have a better and deeper understanding of the technical concepts of quantum computing and quantum mechanics. You can find my notes on the whole book here: <a href="https://notes.aadimator.com/%F0%9F%93%9A%20books/%F0%9F%93%9A%20introduction%20to%20classical%20and%20quantum%20computing%20-%20thomas%20wong/%F0%9F%93%9D%20introduction%20to%20classical%20and%20quantum%20computing%20-%20thomas%20wong/#by-chapters">notes.aadimator.com</a></p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 18 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a>: Today, I finished weeks 1 and 2 of the Coursera <a href="https://twitter.com/hashtag/QuantumComputing?src=hash&amp;ref_src=twsrc%5Etfw">#QuantumComputing</a> Specialization. I&#39;ve also started the 7th Chapter - Quantum Algorithms of Thomas Wong&#39;s book. Tomorrow, I&#39;m planning to complete Course 1 of Specialization and also speed up book reading.</p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1488934488012988424?ref_src=twsrc%5Etfw">February 2, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<hr />
+
+<h1 id="moving-forward">Moving forward</h1>
+
+<p>Now, let’s talk about why I didn’t write any blogpost this past week. Well, the simple answer is that my <a href="https://notes.aadimator.com">notes</a> website was up. Previously, whenever I completed a chapter, I wanted to share the PDF notes with you guys, so I wrote a small blogpost outlining what I learned along with the notes. Now that I’ve moved on to Web Notes, there’s not much need for a blogpost. I use <a href="https://twitter.com/aadimator">twitter</a> for my daily progress updates. So, moving forward, I’ll only share a blogpost when I’m done with a milestone (like today I finished Thomas Wong’s book), or when I have something substantial to say about my journey and how I’m planning to move forward. There’s no point in writing a blogpost just to say “hey guys, I read a few pages of this book today!”.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 19 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a>: Although I was planning to complete the whole course, because of some unforeseen engagements, I was only able to do the Week 3 of the course. Tomorrow will be better, InshaAllah.</p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1489302132851449858?ref_src=twsrc%5Etfw">February 3, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>I have also started the Coursera Specialization, <a href="https://www.coursera.org/specializations/quantum-computing-from-basics-to-the-cutting-edge">Quantum Computing: from Basics to the Cutting Edge</a>, and I’ll update once I’m done with that. I’m also thinking about participating in the <a href="https://qhack.ai/">QHack 2022</a> and I need to hone my programming skills for that. So I’ll most probably be focusing on the <a href="https://qiskit.org/textbook-beta">Qiskit Resources</a> and <a href="https://codebook.xanadu.ai/">Xanadu Codebook</a> as well. Furthermore, I’m really interested in Quantum Machine Learning (QML), so I’ll start some book/course on that as well. I’ll post updates on Twitter as I progress through this.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 20 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a> I&#39;m almost finished with the 7th chapter of Thomas Wong&#39;s book. Hopefully I&#39;ll be done with this book in a day or two, InshaAllah. Then I&#39;m planning to focus more on Coursera Specialization and use Qiskit resources for more practical work.</p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1489658636666347524?ref_src=twsrc%5Etfw">February 4, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 21 of <a href="https://twitter.com/hashtag/30DaysOfQC?src=hash&amp;ref_src=twsrc%5Etfw">#30DaysOfQC</a>: I&#39;m finally finished with <a href="https://twitter.com/thomasgwong?ref_src=twsrc%5Etfw">@thomasgwong</a> Introduction to Classical and Quantum Computing book. It was a great read. I&#39;ve learned quite a lot from him and I really like the way he explains things. Although I still need to work through the Quantum Algorithms👇🏻 <a href="https://t.co/PlrjhCFKZN">pic.twitter.com/PlrjhCFKZN</a></p>&mdash; Aadam (@aadimator) <a href="https://twitter.com/aadimator/status/1489994249424748553?ref_src=twsrc%5Etfw">February 5, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<hr />
+
+<p>If you have any suggestions or questions, feel free to comment below. Talk to you next time, InshaAllah.</p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="aadimator/aadam_dev"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/quantum%20computing/30daysofqc/2022/02/06/30DaysOfQC_Day_22.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>My personal blog to learn in public.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/aadimator" target="_blank" title="aadimator"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/aadimator" target="_blank" title="aadimator"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
